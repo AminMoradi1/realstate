@@ -1,22 +1,17 @@
 import BuyResidentialPage from "@/components/template/BuyResidentialPage";
-import React from "react";
+import connectDB from "@/utils/connectDB";
+import Profile from "@/models/Profile";
 
 async function BuyResidential({ searchParams }) {
-  const res = await fetch(
-    "https://realstate-2antlw0br-amin-moradis-projects.vercel.app/api/profile",
-    {
-      cache: "no-store",
-    }
-  );
-  const data = await res.json();
+  await connectDB();
 
-  if (data.error) return <h3>مشکلی پیش آمده است</h3>;
-  let finalData = data.data;
+  let profiles = await Profile.find({ published: true }).lean();
+
   if (searchParams.category) {
-    finalData = finalData.filter((i) => i.category === searchParams.category);
+    profiles = profiles.filter((i) => i.category === searchParams.category);
   }
 
-  return <BuyResidentialPage data={finalData} />;
+  return <BuyResidentialPage data={JSON.parse(JSON.stringify(profiles))} />;
 }
 
 export default BuyResidential;
