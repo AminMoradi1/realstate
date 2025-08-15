@@ -2,7 +2,7 @@ import BuyResidentialPage from "@/components/template/BuyResidentialPage";
 import React from "react";
 
 async function BuyResidential({ searchParams }) {
-  const res = await fetch("http://localhost:3000/api/profile", {
+  const res = await fetch("/api/profile", {
     cache: "no-store",
   });
   const data = await res.json();
