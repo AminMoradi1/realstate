@@ -1,6 +1,5 @@
 "use client";
 
-import styles from "./LogoutButton.module.css";
 import { signOut } from "next-auth/react";
 import { FiLogOut } from "react-icons/fi";
 function LogoutButton() {
@@ -8,7 +7,7 @@ function LogoutButton() {
     signOut();
   };
   return (
-    <button className={styles.LogoutButton} onClick={signOutHandler}>
+    <button className="LogoutButton" onClick={signOutHandler}>
       <FiLogOut />
       خروج
     </button>
