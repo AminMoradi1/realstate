@@ -1,36 +1,34 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# RealState - Next.js Advanced Real Estate Platform
 
-## Getting Started
+![RealState Logo](#)
 
-First, run the development server:
+**RealState** یک پروژه مدرن و پیشرفته املاک و مستغلات است که با استفاده از **Next.js** ساخته شده است. این پروژه نشان‌دهنده مهارت‌های پیشرفته در طراحی وب، توسعه API، و مدیریت داده‌ها با **MongoDB** است.
+
+## ویژگی‌های کلیدی
+
+- **Next.js پیشرفته:** استفاده از آخرین امکانات Next.js برای بهترین عملکرد و SEO.
+- **احراز هویت کاربر:** سیستم کامل احراز هویت با **NextAuth** و مدیریت سطوح دسترسی (**RBAC**).
+- **CRUD کامل:** ایجاد، خواندن، ویرایش و حذف اطلاعات کاربران و آگهی‌ها با APIهای RESTful.
+- **MongoDB:** دیتا بیس انعطاف‌پذیر و قدرتمند برای ذخیره و مدیریت داده‌ها.
+- **کامپوننت‌های قابل استفاده مجدد:** کد تمیز و ساختارمند با کامپوننت‌های React قابل استفاده در بخش‌های مختلف سایت.
+- **بهینه‌سازی سئو و عملکرد:** صفحات سریع، بهینه و آماده برای موتورهای جستجو.
+- **طراحی ریسپانسیو و مدرن:** UI کاربرپسند، طراحی با بالاترین استانداردهای تجربه کاربری.
+
+## تکنولوژی‌ها
+
+- **Frontend:** Next.js, React, CSS Modules
+- **Backend:** Next.js API Routes, Node.js
+- **Database:** MongoDB
+- **Authentication:** NextAuth.js
+- **State Management:** React hooks, Context API
+## نصب و راه‌اندازی پروژه
 
 ```bash
+# کلون کردن مخزن
+git clone https://github.com/AminMoradi1/realstate.git
+
+# نصب وابستگی‌ها
+npm install
+
+# اجرای پروژه در حالت توسعه
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
